@@ -57,23 +57,10 @@ body {
 }
 
 @keyframes spazz {
-  @for $i from 0 through 100 {
-    @if(random(100) < 66.6) {
-      #{$i}% {
-        $filter_css_value: '';
-        @each $filter,
-        $filter_props in $filters {
-          @if((random(100) / 100) < map-get($filter_props, probability)) {
-            $range: map-get($filter_props, range);
-            $min: map-get($range, min);
-            $max: map-get($range, max);
-            $filter_css_value: $filter_css_value + ' #{$filter}(#{random(100) / 100 * ($max - $min) + $min}#{map-get($filter_props, units)})';
-          }
-        }
-        filter: unquote($filter_css_value);
-        background-color: hsl(random(360), 100%, 70%);
-        transform: translate(#{random(30) - 15}px, #{random(30) - 15}px) scale(random(20) / 100 + 1.05);
-      }
-    }
+  0% {
+    filter: none;
+  }
+  100% {
+    filter: saturate(1) hue-rotate(0deg) invert(1) contrast(1) brightness(25%);
   }
 }
