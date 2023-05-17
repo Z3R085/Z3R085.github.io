@@ -1,26 +1,74 @@
-
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.scss">
     <title>BigGardenBeats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    
-    <div>
-      <h3>BigGardenBeats</h3>
-      <h5>18.-20.08.2023</h5>
-      <button onclick="playSong()">Song abspielen</button>
-    <audio id="myAudio">
-    <source src="song.mp3" type="audio/mpeg">
-    </audio> 
-    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1127851702&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/untreated_de" title="UNTREATED_DE" target="_blank" style="color: #cccccc; text-decoration: none;">UNTREATED_DE</a> · <a href="https://soundcloud.com/untreated_de/closure-present-day-1" title="CLOSURE - Present Day" target="_blank" style="color: #cccccc; text-decoration: none;">CLOSURE - Present Day</a></div>
+    <nav class="navbar navbar-light fixed-top">
+      <a class="navbar-brand" href="#">BigGardenBeats</a>
+      <button
+        id="oc-button"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">LineUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Informationen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <p>Click to start...</p>
-      <h4>You know where</h4>
-       </div>
-    </main>
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source src="content/VID_20220814_021527.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-11 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h2>BigGardenBeats</h2>
+              <p>18.08.2023 - 20.08.2023</p>
+              <h3>Jetzt anmelden</h3>
+              <a href="register.html" class="btn btn-primary">Anmelden</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
-
