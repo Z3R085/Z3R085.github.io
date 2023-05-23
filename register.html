@@ -7,13 +7,13 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Registrierung</title>
   </head>
   <body>
     <div class="container">
       <h1>Registrierung</h1>
-      <form>
+      <form action="bestaetigung.php" method="POST">
         <div class="form-group">
           <label for="vorname">Vorname:</label>
           <input
@@ -70,7 +70,9 @@
             <option value="option3">Samstag</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary">Registrieren</button>
+        <button type="submit" class="btn btn-primary" name="registrieren">
+          Registrieren
+        </button>
       </form>
     </div>
 
